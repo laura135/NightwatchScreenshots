@@ -1,0 +1,46 @@
+featureFlags:
+  flags:
+  - flag:
+      name: flagToBeDeleted588
+      identifier: flagToBeDeleted588
+      description: ' '
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: defaultTestEnv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: newFlagForGitSync1421
+      identifier: newFlagForGitSync1421
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: defaultTestEnv
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "on"
+  projectIdentifier: LMFTempGit1
+  orgIdentifier: default
