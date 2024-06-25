@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: flagToBeDeleted588
+      name: newname
       identifier: flagToBeDeleted588
       description: ' '
       permanent: false
@@ -20,7 +20,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
   - flag:
       name: newFlagForGitSync1421
       identifier: newFlagForGitSync1421
