@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: flag3
+      identifier: flag3
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: defaultTestEnv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: newname
       identifier: flagToBeDeleted588
       description: ' '
