@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: super unique flag that hopefully no one else has
+      identifier: super_unique_flag_that_hopefully_no_one_else_has
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: TestFlag
       identifier: TestFlag
       description: ""
