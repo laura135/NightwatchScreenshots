@@ -21,6 +21,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+        targetRules:
+        - targets:
+          - identifier: t3
+          variation: "true"
   - flag:
       name: TestFlag
       identifier: TestFlag
