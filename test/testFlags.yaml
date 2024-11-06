@@ -42,26 +42,5 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-  - flag:
-      name: test flag
-      identifier: test_flag
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: TestEnv
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
   projectIdentifier: CF_GitExperience_gitToHarnessFlow26500
   orgIdentifier: default
